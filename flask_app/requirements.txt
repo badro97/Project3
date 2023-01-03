@@ -1,0 +1,10 @@
+Flask
+Werkzeug
+Jinja2
+numpy
+scikit-learn
+scipy
+virtualenv
+pillow
+fasttext
+gensim

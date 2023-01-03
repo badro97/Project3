@@ -1,0 +1,25 @@
+<!-- # html 상속 -->
+{% extends "base.html"%}
+{% block content %}
+
+<div class="jumbotron">
+    <h1>COOKER</h1>
+    <p>생각하고 있는 요리/재료를 입력하면</p>
+    <p>음식(상품) 분류 카테고리를</p>
+    <p>알려주는 서비스입니다</p>
+    <ul>
+        <li>최소한 한 글자 이상을 포함하시오</li>
+        <li>영어를 입력하지 마시오</li>
+        <li>특수문자를 입력하지 마시오</li>
+    </ul>
+
+    <form action="{{url_for('report')}}">
+        <label for="first">재료 : </label>
+        <input type="text" name="title">
+
+        
+        <input class="btn btn-primary" type="submit" value="추천받기">
+    </form>
+</div>
+
+{% endblock %}
